@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div><input type="number" value="" id="inp2" placeholder="input rows..."></div>
+            <div><input type="number" value="" id="inp1" placeholder="input columns..."></div>
+        </div>
+        <div><button onclick="calc()">Get Table</button></div>
+    </div>
+
+    <!-- display unit -->
+    <div style="background-color: pink; color: maroon;width: 100%;" id="display"></div>
+
+
+
+    <script>
+        function calc() {
+            display.innerHTML = '';
+            let a = inp1.value;
+            let b = inp2.value;
+            for (let i = 1; i <= a; i++){
+                for (let j = 1; j <= b; j++) {
+                    display.innerHTML += i + ' * ' + j + ' = ' + (i*j) + '<br>';
+                }
+               
+            }
+             
+        }
+    </script>
+</body>
+</html>
