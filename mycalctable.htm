@@ -12,7 +12,13 @@
             <div><input type="number" value="" id="inp2" placeholder="input rows..."></div>
             <div><input type="number" value="" id="inp1" placeholder="input columns..."></div>
         </div>
-        <div><button onclick="calc()">Get Table</button></div>
+        <div><button onclick="option()">Get Table</button></div>
+        <div><select name="table" id="ttt">
+            <option value="1" id="opt1">multiplication</option>
+            <option value="2" id="opt2">addition</option>
+            <option value="3" id="opt3">subtraction</option>
+            <option value="4" id="opt4">division</option>
+        </select></div>
     </div>
 
     <!-- display unit -->
@@ -21,7 +27,20 @@
 
 
     <script>
-        function calc() {
+        function option() {
+            let userOption = document.getElementById('ttt');
+            let optn = userOption.options[userOption.selectedIndex].text;
+            if (optn == 'multiplication') {
+                multi();
+            } else if (optn == 'addition') {
+                addy();
+            } else if (optn == 'subtraction') {
+                subt();
+            } else {
+                div();
+            }
+        }
+        function multi() {
             display.innerHTML = '';
             let a = inp1.value;
             let b = inp2.value;
@@ -29,9 +48,37 @@
                 for (let j = 1; j <= b; j++) {
                     display.innerHTML += i + ' * ' + j + ' = ' + (i*j) + '<br>';
                 }
-               
             }
-             
+        }
+        function addy() {
+            display.innerHTML = '';
+            let c = inp1.value;
+            let d = inp2.value;
+            for (let k = 1; k <= c; k++) {
+                for (let l = 1; l <= d; l++) {
+                    display.innerHTML += k + ' + ' + l + ' = ' + (k+l) + '<br>';
+                }
+            }
+        }
+        function subt() {
+            display.innerHTML = '';
+            let c = inp1.value;
+            let d = inp2.value;
+            for (let k = 1; k <= c; k++) {
+                for (let l = 1; l <= d; l++) {
+                    display.innerHTML += k + ' - ' + l + ' = ' + (k-l) + '<br>';
+                }
+            }
+        }
+        function div() {
+            display.innerHTML = '';
+            let c = inp1.value;
+            let d = inp2.value;
+            for (let k = 1; k <= c; k++) {
+                for (let l = 1; l <= d; l++) {
+                    display.innerHTML += k + ' / ' + l + ' = ' + parseFloat(k/l).toFixed(2) + '<br>';
+                }
+            }
         }
     </script>
 </body>
