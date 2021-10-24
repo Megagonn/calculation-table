@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <div>
-            <div><input type="number" value="" id="inp2" placeholder="input rows..."></div>
-            <div><input type="number" value="" id="inp1" placeholder="input columns..."></div>
+<body style="background-color: rgb(255, 213, 220);">
+    <div style="background-color: rgb(87, 0, 0); display: flex;">
+        <div style="width: auto; color: mediumvioletred; font-style: italic; margin: 0 auto;">
+            <h1>myCalculationTable</h2>
         </div>
-        <div><button onclick="option()">Get Table</button></div>
-        <div><select name="table" id="ttt">
-            <option value="1" id="opt1">multiplication</option>
-            <option value="2" id="opt2">addition</option>
-            <option value="3" id="opt3">subtraction</option>
-            <option value="4" id="opt4">division</option>
-        </select></div>
+        <div style="width: 40%; display: flex; margin: 0 auto; padding-top: 15px;">
+            <div style="width: 30%; margin: 10px auto; text-align: right;">
+                <div><input type="number" value="" id="inp2" placeholder="input rows..."></div>
+                <div><input type="number" value="" id="inp1" max="13" placeholder="input columns..."></div>
+            </div>
+            <div style="width: 40%; margin: 10px auto; text-align: left; display: flex;">
+                <div style="width: auto; margin: 10px auto;"><button onclick="option()">Get Table</button></div>
+                <div style="width: auto; margin: 10px auto;">
+                    <select name="table" id="ttt">
+                        <option value="1" id="opt1">multiplication</option>
+                        <option value="2" id="opt2">addition</option>
+                        <option value="3" id="opt3">subtraction</option>
+                        <option value="4" id="opt4">division</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- display unit -->
@@ -36,6 +45,15 @@
         <div style="background-color: pink; color: maroon;width: 100%;" id="display11"></div>
         <div style="background-color: maroon; color: pink;width: 100%;" id="display12"></div>
         <div style="background-color: pink; color: maroon;width: 100%;" id="display13"></div>
+    </div>
+    <div style="display: flex; font-size: smaller; text-align: justify;">
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display14"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display15"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display16"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display17"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display18"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display19"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display20"></div>
     </div>
 
 
@@ -68,6 +86,13 @@
             display11.innerHTML = '';
             display12.innerHTML = '';
             display13.innerHTML = '';
+            display14.innerHTML = '';
+            display15.innerHTML = '';
+            display16.innerHTML = '';
+            display17.innerHTML = '';
+            display18.innerHTML = '';
+            display19.innerHTML = '';
+            display20.innerHTML = '';
 
             let a = inp1.value;
             let b = inp2.value;
@@ -156,6 +181,13 @@
             display11.innerHTML = '';
             display12.innerHTML = '';
             display13.innerHTML = '';
+            display14.innerHTML = '';
+            display15.innerHTML = '';
+            display16.innerHTML = '';
+            display17.innerHTML = '';
+            display18.innerHTML = '';
+            display19.innerHTML = '';
+            display20.innerHTML = '';
 
             let c = inp1.value;
             let d = inp2.value;
@@ -227,6 +259,41 @@
                             display13.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
                         }
                     }
+                    if (ab == 14) {
+                        for (let l = i; l <= i; l++){
+                            display14.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 15) {
+                        for (let l = i; l <= i; l++){
+                            display15.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 16) {
+                        for (let l = i; l <= i; l++){
+                            display16.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 17) {
+                        for (let l = i; l <= i; l++){
+                            display17.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 18) {
+                        for (let l = i; l <= i; l++){
+                            display18.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 19) {
+                        for (let l = i; l <= i; l++){
+                            display19.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
+                    if (ab == 20) {
+                        for (let l = i; l <= i; l++){
+                            display20.innerHTML += i + ' + ' + j + ' = ' + (i+j) + '<br>';
+                        }
+                    }
                 }
             }
         }
@@ -244,6 +311,13 @@
             display11.innerHTML = '';
             display12.innerHTML = '';
             display13.innerHTML = '';
+            display14.innerHTML = '';
+            display15.innerHTML = '';
+            display16.innerHTML = '';
+            display17.innerHTML = '';
+            display18.innerHTML = '';
+            display19.innerHTML = '';
+            display20.innerHTML = '';
 
             let c = inp1.value;
             let d = inp2.value;
@@ -315,6 +389,41 @@
                             display13.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
                         }
                     }
+                    if (ab == 14) {
+                        for (let l = i; l <= i; l++){
+                            display14.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 15) {
+                        for (let l = i; l <= i; l++){
+                            display15.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 16) {
+                        for (let l = i; l <= i; l++){
+                            display16.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 17) {
+                        for (let l = i; l <= i; l++){
+                            display17.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 18) {
+                        for (let l = i; l <= i; l++){
+                            display18.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 19) {
+                        for (let l = i; l <= i; l++){
+                            display19.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
+                    if (ab == 20) {
+                        for (let l = i; l <= i; l++){
+                            display20.innerHTML += i + ' - ' + j + ' = ' + (i-j) + '<br>';
+                        }
+                    }
                 }
             }
         }
@@ -332,6 +441,13 @@
             display11.innerHTML = '';
             display12.innerHTML = '';
             display13.innerHTML = '';
+            display14.innerHTML = '';
+            display15.innerHTML = '';
+            display16.innerHTML = '';
+            display17.innerHTML = '';
+            display18.innerHTML = '';
+            display19.innerHTML = '';
+            display20.innerHTML = '';
 
             let c = inp1.value;
             let d = inp2.value;
