@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Table</title>
+</head>
+<body style="background-color: rgb(255, 213, 220);">
+    <div style="background-color: rgb(87, 0, 0); display: flex;">
+        <div style="width: auto; color: mediumvioletred; font-style: italic; margin: 0 auto;">
+            <h1>myCalculationTable</h2>
+        </div>
+        <div style="width: 40%; display: flex; margin: 0 auto; padding-top: 15px;">
+            <div style="width: 30%; margin: 10px auto; text-align: right;">
+                <div><input type="number" value="" id="inp2" placeholder="input rows..."></div>
+                <div><input type="number" value="" id="inp1" max="20" placeholder="input columns..."></div>
+            </div>
+            <div style="width: 40%; margin: 10px auto; text-align: left; display: flex;">
+                <div style="width: auto; margin: 10px auto;"><button onclick="option()">Get Table</button></div>
+                <div style="width: auto; margin: 10px auto;">
+                    <select name="table" id="ttt">
+                        <option value="1" id="opt1">multiplication</option>
+                        <option value="2" id="opt2">addition</option>
+                        <option value="3" id="opt3">subtraction</option>
+                        <option value="4" id="opt4">division</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- display unit -->
+    <div style="display: flex; font-size: smaller; text-align: justify;">
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display1"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display2"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display3"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display4"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display5"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display6"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display7"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display8"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display9"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display10"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display11"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display12"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display13"></div>
+    </div>
+    <div style="display: flex; font-size: smaller; text-align: justify;">
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display14"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display15"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display16"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display17"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display18"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;" id="display19"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;" id="display20"></div>
+        
+        <div style="background-color: pink; color: maroon;width: 100%;"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;"></div>
+        <div style="background-color: pink; color: maroon;width: 100%;"></div>
+        <div style="background-color: maroon; color: pink;width: 100%;"></div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
